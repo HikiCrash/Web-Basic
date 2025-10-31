@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크의 target 속성 활용</title>
+</head>
+<body>
+    <h3>링크의 target 속성 홯용</h3>
+    <hr>
+    <ul>  <!-- 현재 창에서 링크로 이동하는 게 기본값임. -->
+        <li><a href="http://www.w3.org" target="_blank">W3C(새 윈도우, _blank)</a></li>
+        <li><a href="http://www.etnews.com" target="_self">전자신문(현재 윈도우, _self)</a></li>
+        <li><a href="http://www.naver.com" target="_parent">네이버(부모 윈도우, _parent)</a></li> 
+        <li><a href="http://www.mk.co.kr" target="_top">매일경제신문(브라우저 윈도우, _top)</a></li>
+    </ul> <!-- 부모 윈도우는 frame에서 의미있음, 현재 프레임의 부모, 없으면 self와 동일 -->
+</body> <!-- 브라우저 윈도우는 최상위 창에서 브라우저 전체를 새 문서로 바꿔버림 -->
+</html>
